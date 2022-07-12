@@ -1,0 +1,391 @@
+body {
+  background-image: url("images/bg.png");
+  background-size: cover;
+  padding: 2% 7%;
+}
+
+.small-screen {
+  display: none;
+}
+
+/* Navigation Section */
+.navbar-brand {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(73, 92, 131, 0.5);
+  position: absolute;
+  z-index: 3;
+  padding-top: 0.5rem;
+}
+
+.navbar-brand:hover {
+  color: #495C83;
+}
+
+.navbar .nav-container {
+  justify-content: flex-end;
+}
+
+.navbar {
+  background-color: inherit;
+}
+
+.nav-button {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: rgba(73, 92, 131, 0.7);
+  border: 1px solid rgba(73, 92, 131, 0.3);
+  border-radius: 5px;
+  padding: 5px 16px;
+  margin-left: 20px;
+}
+
+.nav-button:hover {
+  color: #495C83;
+}
+
+.hamburger-icon {
+  color: rgba(73, 92, 131, 0.5);
+}
+
+/* Intro Section */
+.intro-card {
+  margin-top: 5%;
+  background-color: inherit;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 13px rgba(73, 92, 131, 0.2);
+}
+
+.intro-heading-txt {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: rgba(73, 92, 131, 0.5);
+  letter-spacing: 5px;
+  margin: 30px;
+  line-height: 4.5rem;
+}
+
+.fname {
+  margin-bottom: 0;
+}
+
+.lname {
+  margin-left: 20%;
+  margin-top: 0;
+}
+
+.intro-body-txt {
+  font-family: 'Arvo', serif;
+  font-size: 12px;
+  line-height: 20px;
+  width: 20%;
+  color: #424A64;
+  margin-left: 45%;
+  margin-bottom: 40px;
+}
+
+.highlight-text {
+  color: #A8A4CE;
+}
+
+/* Projects Section */
+
+.project-container {
+  margin-top: 5%;
+}
+.short-line {
+  display: inline-block;
+  border-bottom: rgba(73, 92, 131, 0.5) 1px solid;
+  width: 5%;
+  margin: 4px 10px;
+}
+
+.long-line {
+  display: inline-block;
+  border-bottom: rgba(73, 92, 131, 0.5) 1px solid;
+  width: 80%;
+  margin: 4px 10px;
+}
+
+.project-section-title {
+  display: inline-block;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(73, 92, 131, 0.5);
+}
+
+/* Project Cards */
+
+.projects {
+  justify-content: space-between;
+}
+
+.project-card {
+  padding: 0;
+  border: none;
+  margin: 20px auto;
+  color: #424A64;
+  box-shadow: 5px 5px 20px rgba(73, 92, 131, 0.2);
+}
+
+.horizontal-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-column {
+  padding: 3%;
+  margin-left: 3%;
+}
+
+.project-title {
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.project-tag {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 10.88px;
+  background-color: rgba(73, 92, 131, 0.1);
+  padding: 3px;
+  border-radius: 2px;
+  color: #7A86B6;
+}
+
+.project-info {
+  font-family: 'Arimo', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+.project-link {
+  position: absolute;
+  bottom: 15px;
+  left: 50px;
+  color: #A8A4CE;
+}
+
+.project-link:hover {
+  color: #C8B6E2;
+}
+
+.project-github {
+  position: absolute;
+  bottom: 15px;
+  color: #A8A4CE;
+}
+
+.project-github:hover {
+  color: #C8B6E2;
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Footer Section */
+
+.contact-container {
+  padding: 5%;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -60%;
+  height: 165%;
+  width: auto;
+}
+
+.img-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.footer-name {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(73, 92, 131, 0.4);
+  letter-spacing: 2px;
+}
+
+.footer-fname {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.footer-lname {
+  margin-left: 40px;
+}
+
+.contact-div {
+  text-align: right;
+}
+
+.contact-heading {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgba(73, 92, 131, 0.5);
+
+}
+
+.contact-info {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #495C83;
+}
+
+
+
+/* Navbar Offcanvas Styles */
+@media all and (max-width: 991px) {
+  body.offcanvas-active {
+    overflow: hidden;
+  }
+
+  .offcanvas-header {
+    display: none;
+  }
+
+  .screen-darken {
+    height: 100%;
+    width: 0%;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity .2s linear, visibility 0.2s, width 2s ease-in;
+  }
+
+  .screen-darken.active {
+    z-index: 10;
+    transition: opacity .3s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+
+  /* Mobile Sizing */
+  .large-screen {
+    display: none;
+  }
+
+  .small-screen {
+    display: inline;
+  }
+
+        /* Nav & Offcanvas Mobile */
+
+  .hamburger-icon {
+    position: absolute;
+    right: 8%;
+    margin-top: 3%;
+    border: none;
+    background-color: inherit;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .navbar {
+    background-color: #fff;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    margin-left: 5%;
+  }
+
+  .nav-button {
+    width: 90%;
+    margin: 10px 10px;
+  }
+
+  .first-button {
+    margin-top: 50px;
+  }
+
+  .offcanvas-header .btn-close {
+    color: rgba(73, 92, 131, 0.5);
+  }
+
+  .offcanvas-header {
+    display: block;
+  }
+
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+  }
+
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mobile-offcanvas .container, .mobile-offcanvas .container-fluid {
+    display: block;
+  }
+
+          /* Heading Section Mobile */
+
+  .intro-card {
+    margin-top: 70px;
+  }
+
+  .intro-body-txt {
+    margin-left: 30px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .split-name {
+    display: block;
+  }
+
+  .lname {
+    align-self: flex-end;
+    text-align-last: right;
+  }
+}

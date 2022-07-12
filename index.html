@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Archivo:wght@600;700&family=Arimo&family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/ff85ae52df.js" crossorigin="anonymous"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Mollibeth Cardwell</title>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <section id="navigation-section">
+
+    <span class="screen-darken"></span>
+    <a class="navbar-brand" href="https://mollibeth.dev">mollibeth.dev</a>
+
+    <button class="hamburger-icon small-screen navbar-toggler" type="button" data-trigger="navbar_main">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </button>
+
+    <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg">
+
+      <div class="container-fluid nav-container">
+        <div class="offcanvas-header">
+          <button class="btn-close float-end small-screen"></button>
+        </div>
+
+        <button class="btn nav-button first-button" type="button" name="projects-button">PROJECTS</button>
+        <button class="btn nav-button" type="button" name="resume-button">RESUME</button>
+        <button class="btn nav-button" type="button" name="contact-button">CONTACT</button>
+
+      </div>
+    </nav>
+  </section>
+
+  <!-- Heading Section -->
+
+  <section id="heading-section">
+
+    <div class="card intro-card">
+
+      <h1 class="intro-heading-txt fname"><span class="split-name">molli</span><span class="split-name">beth</span></h1>
+      <h1 class="intro-heading-txt lname"><span class="split-name">card</span><span class="split-name">well</span></h1>
+
+      <p class="intro-body-txt">Hi, I'm a <strong class="highlight-text">Full Stack Developer</strong>
+         based in Cleveland, OH. I work with
+         <strong class="highlight-text">HTML, CSS, Javascript, Node.js, React.js, </strong>
+         and <strong class="highlight-text">MongoDB</strong>
+         to create websites and applications. Welcome to my portfolio!</p>
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects-section">
+
+    <div class="project-container container-flex">
+      <div class="short-line"></div>
+      <h6 class="project-section-title">PROJECTS</h6>
+      <div class="long-line"></div>
+      <!-- SORT BY DROPDOWN
+      <h6 class="project-section-title dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           SORT BY</a>
+         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <li><a class="dropdown-item" href="#">Action</a></li>
+           <li><a class="dropdown-item" href="#">Another action</a></li>
+           <li><a class="dropdown-item" href="#">Something else here</a></li>
+         </ul>
+       </h6>
+      <div class="short-line"></div> -->
+    </div>
+
+    <div class="row container projects">
+
+      <!-- Horizontal Card - 1st row -->
+
+      <div class="card project-card col-md-7">
+        <div class="row horizontal-card ">
+          <div class="text-column col-sm-4">
+            <h3 class="project-title">Tip Calculator</h3>
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+
+            <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
+            <a href="#"><i class="project-github fa-brands fa-github"></i></a>
+            <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="col-sm-7 img-container">
+            <img class="card-img" src="images/tip-calc.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical Card 1st row -->
+
+      <div class="card project-card vertical-card col-md-4">
+        <img src="images/newsletter.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="project-title">Newsletter Signup</h3>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">API</span>
+          <span class="project-tag">CSS</span>
+
+          <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
+          <a href="#"><i class="project-github fa-brands fa-github"></i></a>
+          <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Vertical Card 2nd row -->
+
+      <div class="card project-card vertical-card col-md-4">
+        <img src="images/interactive-pricing.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="project-title">Interactive Pricing</h3>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JS</span>
+
+          <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
+          <a href="#"><i class="project-github fa-brands fa-github"></i></a>
+          <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Horizontal Card 2nd row -->
+
+      <div class="card project-card col-md-7">
+        <div class="row horizontal-card ">
+          <div class="text-column col-sm-4">
+            <h3 class="project-title">Dropdown Navigation and Offcanvas Mobile</h3>
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+
+            <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
+            <a href="#"><i class="project-github fa-brands fa-github"></i></a>
+            <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="col-sm-7 img-container">
+            <img class="card-img" src="images/navigation.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Card - 3rd row -->
+
+      <div class="card project-card col-md-7">
+        <div class="row horizontal-card ">
+          <div class="text-column col-sm-4">
+            <h3 class="project-title">Simon Game</h3>
+            <span class="project-tag">JS</span>
+
+            <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
+            <a href="#"><i class="project-github fa-brands fa-github"></i></a>
+            <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="col-sm-7 img-container">
+            <img class="card-img" src="images/simon-game.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical Card 3rd row -->
+
+      <div class="card project-card vertical-card col-md-4">
+        <img src="images/pregnant-in-cle.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="project-title">Pregnant in CLE Website</h3>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JS</span>
+
+          <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
+          <a href="#"><i class="project-github fa-brands fa-github"></i></a>
+          <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- project container closing div -->
+    </div>
+  </section>
+
+
+
+  <!-- Contact / Footer Section -->
+
+  <section id="contact">
+
+    <div class="project-container container-flex">
+      <div class="short-line"></div>
+      <h6 class="project-section-title">CONTACT</h6>
+      <div class="long-line"></div>
+    </div>
+
+
+    <div class="container row contact-container">
+
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6 img-container">
+            <div class="img-cropper">
+              <img src="images/mb-profile.jpg" class="profile-pic" alt="profile-pic">
+            </div>
+          </div>
+          <div class="col-6 footer-name">
+            <h3 class="footer-fname">mollibeth</h3>
+            <h3 class="footer-lname">cardwell</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="row">
+          <div class="col-3 contact-div">
+            <h6 class="contact-heading">CALL</h6>
+            <h6 class="contact-heading">EMAIL</h6>
+            <h6 class="contact-heading">GITHUB</h6>
+            <h6 class="contact-heading">LINKEDIN</h6>
+          </div>
+          <div class="col-9">
+            <h6 class="contact-info">570.677.2728</h6>
+            <h6 class="contact-info">mollibethcardwell@gmail.com</h6>
+            <h6 class="contact-info">mollibeth-cardwell</h6>
+            <h6 class="contact-info">/in/mollibeth</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="index.js">
+
+  </script>
+</body>
+
+</html>
