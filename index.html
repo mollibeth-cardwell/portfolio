@@ -41,9 +41,9 @@
           <button class="btn-close float-end small-screen"></button>
         </div>
 
-        <button class="btn nav-button first-button" type="button" name="projects-button">PROJECTS</button>
-        <button class="btn nav-button" type="button" name="resume-button">RESUME</button>
-        <button class="btn nav-button" type="button" name="contact-button">CONTACT</button>
+        <button class="btn nav-button first-button" type="button" name="projects-button"><a class="button-link" href=#projects-section >PROJECTS</a></button>
+        <button class="btn nav-button" type="button" name="resume-button"><a class="button-link" href= >RESUME</a></button>
+        <button class="btn nav-button" type="button" name="contact-button"><a class="button-link" href=#contact >CONTACT</a></button>
 
       </div>
     </nav>
@@ -54,15 +54,17 @@
   <section id="heading-section">
 
     <div class="card intro-card">
+      <div class="heading-container">
+        <h1 class="intro-heading-txt fname"><span class="split-name">molli</span><span class="split-name">beth</span></h1>
+        <h1 class="intro-heading-txt lname"><span class="split-name">card</span><span class="split-name">well</span></h1>
 
-      <h1 class="intro-heading-txt fname"><span class="split-name">molli</span><span class="split-name">beth</span></h1>
-      <h1 class="intro-heading-txt lname"><span class="split-name">card</span><span class="split-name">well</span></h1>
-
-      <p class="intro-body-txt">Hi, I'm a <strong class="highlight-text">Full Stack Developer</strong>
-         based in Cleveland, OH. I work with
-         <strong class="highlight-text">HTML, CSS, Javascript, Node.js, React.js, </strong>
-         and <strong class="highlight-text">MongoDB</strong>
-         to create websites and applications. Welcome to my portfolio!</p>
+        <p class="intro-body-txt">Hi, I'm a <strong class="highlight-text">Full Stack Developer</strong>
+          based in Cleveland, OH. I work with
+          <strong class="highlight-text">HTML, CSS, Javascript, Node.js, React.js, </strong>
+          and <strong class="highlight-text">MongoDB</strong>
+          to create websites and applications. Welcome to my portfolio!
+        </p>
+      </div>
     </div>
 
   </section>
@@ -72,9 +74,12 @@
   <section id="projects-section">
 
     <div class="project-container container-flex">
-      <div class="short-line"></div>
-      <h6 class="project-section-title">PROJECTS</h6>
-      <div class="long-line"></div>
+      <div class="section-divider">
+        <div class="short-line"></div>
+        <h6 class="project-section-title">PROJECTS</h6>
+        <div class="long-line"></div>
+      </div>
+
       <!-- SORT BY DROPDOWN
       <h6 class="project-section-title dropdown">
          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,7 +93,7 @@
       <div class="short-line"></div> -->
     </div>
 
-    <div class="row container projects">
+    <div class="row projects">
 
       <!-- Horizontal Card - 1st row -->
 
@@ -96,13 +101,21 @@
         <div class="row horizontal-card ">
           <div class="text-column col-sm-4">
             <h3 class="project-title">Tip Calculator</h3>
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JS</span>
+            <div class="tag-container">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JS</span>
+            </div>
 
-            <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
-            <a href="#"><i class="project-github fa-brands fa-github"></i></a>
-            <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p class="project-info">Calculate the correct tip and total cost of a bill per person using this Tip Calculator.</p>
+            <div class="link-container">
+              <div class="link-div">
+
+
+                <a href="https://github.com/mollibeth-cardwell/tip-calculator"><i class="project-link fa-brands fa-github"></i></a>
+                <a href="https://mollibeth.dev/tip-calculator"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
           </div>
           <div class="col-sm-7 img-container">
             <img class="card-img" src="images/tip-calc.png" alt="">
@@ -116,13 +129,19 @@
         <img src="images/newsletter.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="project-title">Newsletter Signup</h3>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">API</span>
-          <span class="project-tag">CSS</span>
+          <div class="tag-container">
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">API</span>
+            <span class="project-tag">CSS</span>
+          </div>
 
-          <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
-          <a href="#"><i class="project-github fa-brands fa-github"></i></a>
-          <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+          <p class="project-info">A newsletter signup form that uses the Mailchip API to get the new subscriber's information and add them to my Mailchimp list.</p>
+          <div class="link-container">
+            <div class="link-div">
+              <a href="https://github.com/mollibeth-cardwell/newsletter-signup"><i class="project-link fa-brands fa-github"></i></a>
+              <a href="https://desolate-meadow-84776.herokuapp.com/"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -132,13 +151,19 @@
         <img src="images/interactive-pricing.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="project-title">Interactive Pricing</h3>
-          <span class="project-tag">HTML</span>
-          <span class="project-tag">CSS</span>
-          <span class="project-tag">JS</span>
+          <div class="tag-container">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
 
-          <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
-          <a href="#"><i class="project-github fa-brands fa-github"></i></a>
-          <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+          <p class="project-info">Use the slider and toggle to see prices for different page view numbers.</p>
+          <div class="link-container">
+            <div class="link-div">
+              <a href="https://github.com/mollibeth-cardwell/interactive-pricing"><i class="project-link fa-brands fa-github"></i></a>
+              <a href="https://mollibeth.dev/interactive-pricing"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -148,13 +173,19 @@
         <div class="row horizontal-card ">
           <div class="text-column col-sm-4">
             <h3 class="project-title">Dropdown Navigation and Offcanvas Mobile</h3>
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JS</span>
+            <div class="tag-container">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JS</span>
+            </div>
 
-            <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
-            <a href="#"><i class="project-github fa-brands fa-github"></i></a>
-            <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p class="project-info">A responsive navigation bar with dowpdown menus and mobile offcanvas side menu.</p>
+            <div class="link-container">
+              <div class="link-div">
+                <a href="https://github.com/mollibeth-cardwell/dropdown-navigation"><i class="project-link fa-brands fa-github"></i></a>
+                <a href="https://mollibeth.dev/dropdown-navigation"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
           </div>
           <div class="col-sm-7 img-container">
             <img class="card-img" src="images/navigation.png" alt="">
@@ -168,11 +199,17 @@
         <div class="row horizontal-card ">
           <div class="text-column col-sm-4">
             <h3 class="project-title">Simon Game</h3>
-            <span class="project-tag">JS</span>
+            <div class="tag-container">
+              <span class="project-tag">JS</span>
+            </div>
 
-            <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
-            <a href="#"><i class="project-github fa-brands fa-github"></i></a>
-            <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p class="project-info">Play the Simon game and remember the sequence of randomly chosen colors.</p>
+            <div class="link-container">
+              <div class="link-div">
+                <a href="https://github.com/mollibeth-cardwell/simon-game"><i class="project-link fa-brands fa-github"></i></a>
+                <a href="https://mollibeth.dev/simon-game"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
           </div>
           <div class="col-sm-7 img-container">
             <img class="card-img" src="images/simon-game.png" alt="">
@@ -186,13 +223,19 @@
         <img src="images/pregnant-in-cle.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="project-title">Pregnant in CLE Website</h3>
-          <span class="project-tag">HTML</span>
-          <span class="project-tag">CSS</span>
-          <span class="project-tag">JS</span>
+          <div class="tag-container">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
 
-          <p class="project-info">Here's something about the Tip Calcualtor challenge on Frontend Mentor.</p>
-          <a href="#"><i class="project-github fa-brands fa-github"></i></a>
-          <a href="#"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+          <p class="project-info">An update page that I made for pregnant women in Cleveland during the pandemic to find aggregated information about in-person restrictions for prenatal care and delivery.</p>
+          <div class="link-container">
+            <div class="link-div">
+              <a href="https://github.com/mollibeth-cardwell/pregnant-in-cle"><i class="project-link fa-brands fa-github"></i></a>
+              <a href="https://mollibeth.dev/pregnant-in-cle"><i class="project-link fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -207,15 +250,17 @@
   <section id="contact">
 
     <div class="project-container container-flex">
-      <div class="short-line"></div>
-      <h6 class="project-section-title">CONTACT</h6>
-      <div class="long-line"></div>
+      <div class="section-divider">
+        <div class="short-line"></div>
+        <h6 class="project-section-title">CONTACT</h6>
+        <div class="long-line"></div>
+      </div>
     </div>
 
 
     <div class="container row contact-container">
 
-      <div class="col-6">
+      <div class="col-lg-6">
         <div class="row">
           <div class="col-6 img-container">
             <div class="img-cropper">
@@ -229,15 +274,15 @@
         </div>
       </div>
 
-      <div class="col-6">
-        <div class="row">
-          <div class="col-3 contact-div">
+      <div class="col-lg-6">
+        <div class="row contact-details">
+          <div class="col-lg-3 col-sm-6 contact-div contact-columns">
             <h6 class="contact-heading">CALL</h6>
             <h6 class="contact-heading">EMAIL</h6>
             <h6 class="contact-heading">GITHUB</h6>
             <h6 class="contact-heading">LINKEDIN</h6>
           </div>
-          <div class="col-9">
+          <div class="col-lg-9 col-sm-6 contact-columns">
             <h6 class="contact-info">570.677.2728</h6>
             <h6 class="contact-info">mollibethcardwell@gmail.com</h6>
             <h6 class="contact-info">mollibeth-cardwell</h6>
