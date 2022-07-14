@@ -12,7 +12,7 @@ body {
 .navbar-brand {
   font-family: 'Archivo', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   color: rgba(73, 92, 131, 0.5);
   position: absolute;
   z-index: 3;
@@ -34,7 +34,7 @@ body {
 .nav-button {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 0.63rem;
   border: 1px solid rgba(73, 92, 131, 0.3);
   border-radius: 5px;
   padding: 5px 16px;
@@ -94,7 +94,7 @@ body {
 
 .intro-body-txt {
   font-family: 'Arvo', serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 20px;
   width: 40%;
   color: #424A64;
@@ -292,7 +292,7 @@ body {
 }
 
 /* Navbar Offcanvas Styles */
-@media all and (max-width: 991px) {
+@media all and (max-width: 1040px) {
   body.offcanvas-active {
     overflow: hidden;
   }
@@ -357,6 +357,7 @@ body {
   .nav-button {
     width: 90%;
     margin: 10px 10px;
+    font-size: 1rem;
   }
 
   .first-button {
@@ -365,6 +366,7 @@ body {
 
   .offcanvas-header .btn-close {
     color: rgba(73, 92, 131, 0.5);
+    margin: 20px 20px;
   }
 
   .offcanvas-header {
@@ -405,30 +407,10 @@ body {
     align-self: flex-start;
     width: 70%;
     margin-left: 30px;
+    font-size: 1rem;
   }
 
-  .split-name {
-    display: block;
-  }
 
-  .lname {
-    align-self: flex-end;
-    text-align-last: right;
-  }
-
-  /* Contact Section Mobile */
-  .contact-details {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  .project-card {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 575px) {
   .heading-container {
     width: 100%;
   }
@@ -449,7 +431,45 @@ body {
     margin-left: 30px;
   }
 
+  /* Project Section Mobile */
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.7rem;
+    line-height: normal;
+  }
+
+  .project-tag {
+    font-size: 0.8rem;
+  }
+
+  .project-info {
+    font-size: 1rem;
+}
+
+  .link-div a {
+    font-size: 20px;
+  }
+
+
+  /* Contact Section Mobile */
+
   .contact-columns {
     width: 40%;
+  }
+
+  .contact-details {
+    margin-top: 20px;
+  }
+
+  .contact-heading {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
   }
 }
